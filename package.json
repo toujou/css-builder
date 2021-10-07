@@ -1,7 +1,7 @@
 {
   "name": "toujou-css-builder",
   "version": "0.0.1",
-  "description": "A packaga to build toujou's css",
+  "description": "A package to build toujou's css",
   "main": "index.js",
   "repository": {
     "type": "git",
