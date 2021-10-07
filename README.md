@@ -7,9 +7,17 @@ Output files will be autoprefixed and minified. It is also possible to use css `
 ---
 
 ## How to install
-run `npm install --save-dev @toujou/css-builder`
+1. If the extension still doesn't have a npm package on `Resources/Public` you can create one with
+```
+npm init
+```
 
----
+2. Install the @toujou/css-builder package with
+```
+npm install --save-dev @toujou/css-builder
+```
+If it was installed successfully you can see if on the package.json file under `devDependencies`
+
 
 ## How to use
 Run either the default or the custom commands on the `Resources/Public` folder of the extension.
@@ -51,3 +59,17 @@ Or you can use this [list](https://css-tricks.com/is-vendor-prefixing-dead/), wh
 - Separate the css files into small component blocks (easy to do if using BEM, 1 file per block)
 - Use an "extension css file" which imports all other css block files
 - Use same file structure as the toujou extension
+Example:
+```
+- Resources
+    - Public
+        -Scss
+            - Elements
+                - header.css
+                - footer.css
+                - content-card.css
+            - toujou-extension.css
+```
+(on the `toujou-extension.css` import the `Elements/header.css`, `Elements/footer.css` and `Elements/content-card.css`)
+
+With `npx build-toujou-css` you will build all these css files into `Resources/Public/build/Stylesheets/toujou-extension.css`

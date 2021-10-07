@@ -1,6 +1,6 @@
 {
   "name": "@toujou/css-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A package to build toujou's css",
   "main": "index.js",
   "repository": {
