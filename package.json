@@ -1,6 +1,6 @@
 {
   "name": "@toujou/css-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A package to build toujou's css",
   "main": "index.js",
   "repository": {
@@ -20,11 +20,11 @@
     "last 2 versions"
   ],
   "dependencies": {
-    "autoprefixer": "^10.3.7",
-    "cssnano": "^5.0.8",
-    "glob": "^7.2.0",
-    "postcss": "^8.3.9",
-    "postcss-cli": "^9.0.1",
-    "postcss-import": "^14.0.2"
+    "autoprefixer": "^10.4.20",
+    "cssnano": "^7.0.5",
+    "glob": "^11.0.0",
+    "postcss": "^8.4.41",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
   }
 }
